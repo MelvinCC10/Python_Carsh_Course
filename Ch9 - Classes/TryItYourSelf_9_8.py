@@ -61,16 +61,3 @@ class Admin(User):
     def __init__(self, first_name, last_name, age):
         super().__init__(first_name, last_name, age)
         self.privileges = privileges(["can add post", "can delete post", "can ban users"])
-
-
-""" Test Code """
-print('\n\n\n\n')
-
-admin1 = Admin('john','deer',30)
-admin1.describe_user()
-print('\n')
-
-admin1.set_user_name('Reven10')
-print('\n')
-admin1.describe_user()
-admin1.privileges.show_privileges()
