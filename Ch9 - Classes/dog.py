@@ -19,7 +19,7 @@ class Dog():
 my_dog = Dog('willie',6)
 
 #Printing an attribute of the object my_dog
-print("My dogs name is " + my_dog.name.Title())
+print("My dogs name is " + my_dog.name.title())
 
 #executing a method from the object my_dog
 my_dog.sit()
