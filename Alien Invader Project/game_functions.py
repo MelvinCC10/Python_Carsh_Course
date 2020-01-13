@@ -10,11 +10,15 @@ def check_event(ship):
 
         elif event.type == pg.KEYDOWN:
             if event.key == pg.K_RIGHT:
-                ship.moving_right =True
+                ship.moving_right = True
+            elif event.key == pg.K_LEFT:
+                ship.moving_left = True
 
-            elif event.type == pg.KEYUP:
-                if event.key == pg.K_RIGHT:
-                    ship.moving_right = False
+        elif event.type == pg.KEYUP:
+            if event.key == pg.K_RIGHT:
+                ship.moving_right = False
+            elif event.key == pg.K_LEFT:
+                ship.moving_left = False
 
 
 def update_screen(ai_settings,screen, ship):
