@@ -16,7 +16,7 @@ class Ship():
         self.rect.centerx = self.screen_rect.centerx
         self.rect.bottom = self.screen_rect.bottom
 
-        # Store a decimal value for the ships center.
+        # Store a decimal value for the ships center
         self.center =float(self.rect.centerx)
         # Movement Flag
         self.moving_right = False
